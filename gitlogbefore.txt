@@ -1,0 +1,11 @@
+commit 333bf65df79600d71e829de99e885ba925521ee2
+Author: Quinn Kimball <qkimball@madisoncollege.edu>
+Date:   Mon Jun 21 11:05:03 2021 -0700
+
+    Added a new file
+
+commit 575bfbe1940bc515adf911bb4c419c1a8faf9dce
+Author: Quinn Kimball <qkimball@madisoncollege.edu>
+Date:   Mon Jun 21 11:02:05 2021 -0700
+
+    Initial commit of GitHub exercise
