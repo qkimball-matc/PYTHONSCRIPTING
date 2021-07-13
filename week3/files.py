@@ -13,27 +13,25 @@ myFile.close()
 
 # Question 2:
 myFile = open("/etc/passwd", "r")
-fileList = [myFile.read()]
+fileList = myFile.readlines()
 
 print(len(fileList))
-print("The len() function counts the total number of lists contained in fileList.")
-print("You would use this read function to ensure you're file made it all into one list.")
+print("The len() function counts the total number of lines contained in file.")
+print("You would use this read function to count the number of lines in a file.")
 
 myFile.close()
 
 # Question 3:
-myFile =open("/etc/passwd", "r")
-lines = myFile.readlines()
+with open("/etc/passwd", "r") as myFile:
 
-total = 0
-    
-for char in lines:
-    total += len(char)
+    totalFileLength = 0
 
-print(total)
+    for line in myFile:
+        totalFileLength += len(line)
 
-print("This function would be useful if you needed to access other contents line by line, easy to slip in extra code.")
+    print(totalFileLength)
+    print("The len function grabs the total number of characters in each line.")
+    print("This would be used to grab the total number of characters in the document line by line.")
 
-myFile.close()
 
 
