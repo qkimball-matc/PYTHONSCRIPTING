@@ -2,7 +2,7 @@
 
 print("Name: Quinn Kimball")
 
-midFile = open("/home/student/Documents/weekly-assignments-qkimball-matc/Midterm-if.txt", "r")
+midFile = open("./Midterm-if.txt", "r")
 
 Total = 0
 

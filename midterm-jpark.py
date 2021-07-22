@@ -10,6 +10,7 @@ command_database = {"reboot" : "OK. I will reboot all park systems.",
 
 white_rabbit_object = 0
 counter = 0
+tries = 3
 
 while white_rabbit_object == 0 and counter < 3:
     input_user = input("Username: ")
@@ -37,6 +38,8 @@ while white_rabbit_object == 0 and counter < 3:
 
     else:
         counter += 1
+        tries -= 1
+        print(f"Username/password incorrect. You have {tries} tries left.")
 
     if counter == 3:
         print("\nYou didn't say the magic word!" * 25)

@@ -2,7 +2,7 @@
 
 print("Name: Quinn Kimball\n")
 
-sliceFile = open("/home/student/Documents/weekly-assignments-qkimball-matc/slicing-file.txt", "r")
+sliceFile = open("./slicing-file.txt", "r")
 
 sliceString = sliceFile.readlines()
 
